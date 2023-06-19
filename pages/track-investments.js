@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Entry from "../components/entry";
 import { compareSync } from "bcryptjs";
-import useWindowSize from "../hooks/useWindowSIze";
+import useWindowSize from "../hooks/useWindowSize";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
