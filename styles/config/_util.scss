@@ -1,0 +1,63 @@
+$border-radius: 20px;
+$border-radius-input: 40px;
+$border-radius-button: 40px;
+$border-radius-banner-button: 5px;
+$box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+$bp-xxl: 1700px;
+$bp-xl: 1500px;
+$bp-lg: 1380px;
+$bp-md: 1150px;
+$bp-sm: 1024px;
+$bp-xs: 700px;
+$bp-xxs: 400px;
+
+.container {
+  max-width: 1920px;
+  padding: 0 120px;
+  margin: 0 auto;
+
+  // @include media-max($bp-xxl) {
+  //   padding: 0 310px;
+  // }
+  // @include media-max($bp-xl) {
+  //   padding: 0 250px;
+  // }
+  // @include media-max($bp-lg) {
+  //   padding: 0 250px;
+  // }
+  // @include media-max($bp-md) {
+  //   padding: 0 200px;
+  // }
+  @include media-max($bp-sm) {
+    padding: 0 16px;
+    margin: 0;
+  }
+}
+
+.paper {
+  background: $color-light;
+  border-radius: $border-radius;
+}
+
+.pageHolder {
+  padding: 60px 0;
+  @include media-max($bp-md) {
+    padding: 30px 0;
+  }
+}
+
+.callToAction {
+  color: white;
+  background-color: #2640ee;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

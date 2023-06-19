@@ -1,0 +1,85 @@
+header {
+  height: 5rem;
+  background-color: $color-black;
+  padding: 20px 0;
+  width: 100%;
+  .container {
+    @include flexCenterBetween;
+  }
+
+  .left {
+    .logo,
+    .logo p {
+      font-size: 2rem;
+      color: white;
+      margin: 0;
+      text-decoration: none;
+    }
+  }
+
+  .right {
+    .navItems {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: baseline;
+      @include media-max($bp-sm) {
+        display: none;
+      }
+      li {
+        margin: 0 24px;
+
+        a.login {
+          border-left: 1px solid white;
+          padding-left: 24px;
+        }
+        .logout {
+          border-left: 1px solid white;
+          padding-left: 24px;
+          background-color: $color-black;
+          color: $color-white;
+          font-size: 16px;
+          cursor: pointer;
+        }
+      }
+    }
+    .hamburger {
+      display: none;
+      @include media-max($bp-sm) {
+        display: flex;
+        height: 40px;
+        //z-index: 99999;
+        margin: auto 0;
+      }
+    }
+    .mobileLinks {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: $color-black;
+      padding: 40px 0;
+      border: 1px solid #4b4b4b;
+      z-index: 999;
+      text-align: center;
+      a {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 20px;
+        //font-weight: 300;
+      }
+      .logout {
+        background-color: $color-black;
+        color: $color-white;
+        font-size: 18px;
+        //font-weight: 300;
+        cursor: pointer;
+      }
+      .callToAction {
+        width: 50%;
+        margin: 20px auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.whatIsDcaPage {
+  background-image: url("/images/Desktop-Background-About DCA.png");
+  //background-image: url("/dcaBG.jpeg");
+  background-size: cover;
+  height: 100%;
+
+  h1 {
+    text-align: center;
+    font-size: 56px;
+    font-weight: 500;
+    padding-top: 96px;
+    @include media-max($bp-sm) {
+      font-size: 40px;
+    }
+  }
+
+  .section {
+    @include flexAlign;
+    margin-top: 88px;
+    gap: 40px;
+    @include media-max($bp-sm) {
+      flex-wrap: wrap;
+    }
+    p {
+      //styleName: Body 1;
+
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 24px;
+      letter-spacing: 0.25px;
+      text-align: left;
+      color: $color-white;
+      @include media-max($bp-sm) {
+        order: 1;
+      }
+    }
+    img {
+      //order: 1;
+      width: 724px;
+      height: 324px;
+      @include media-max($bp-sm) {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .strategize {
+    text-align: center;
+    padding-bottom: 172px;
+    h2 {
+      //styleName: H2;
+
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 48px;
+      letter-spacing: 0px;
+      text-align: center;
+      margin-top: 140px;
+      @include media-max($bp-sm) {
+        font-size: 28px;
+      }
+    }
+    p {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 24px;
+      letter-spacing: 0.25px;
+      text-align: center;
+      margin-top: 16px;
+      margin-bottom: 40px;
+      color: $color-white;
+    }
+  }
+}

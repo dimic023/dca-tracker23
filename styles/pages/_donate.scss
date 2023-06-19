@@ -1,0 +1,39 @@
+.donatePage {
+  text-align: center;
+  flex: 1;
+  padding-bottom: 340px;
+  background-image: url("/images/Desktop-Background-Donate.png");
+  background-size: cover;
+
+  h1 {
+    //styleName: H1;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 56px;
+    letter-spacing: -1px;
+    text-align: center;
+    padding-top: 96px;
+    @include media-max($bp-sm) {
+      font-size: 40px;
+    }
+  }
+  p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    text-align: center;
+    margin-top: 16px;
+    color: $color-white;
+  }
+  .click {
+    //styleName: Sub 1;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin: 48px 0;
+  }
+}
