@@ -1,9 +1,6 @@
 import React, { useRef, useState } from "react";
 
-import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import moment from "moment";
-import useWindowSize from "../hooks/useWindowSize";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
